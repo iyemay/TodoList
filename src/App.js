@@ -21,6 +21,18 @@ class App extends React.Component {
                 {
                     id: 3,
                     textTodo: "Tarea 3"
+                },
+                {
+                    id: 4,
+                    textTodo: "Tarea 4"
+                },
+                {
+                    id: 5,
+                    textTodo: "Tarea 5"
+                },
+                {
+                    id: 6,
+                    textTodo: "Tarea 6"
                 }
             ]
         };
