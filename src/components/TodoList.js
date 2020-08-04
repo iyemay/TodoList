@@ -5,7 +5,7 @@ export class TodoList extends Component {
     render() {
         if(this.props.todoList.length) {
             return (
-                <div className="d-flex flex-column">
+                <div className="d-flex flex-column col-md-8 offset-md-2">
                     <div className="mb-0 mt-3 py-3 px-3 mx-5 d-flex justify-content-between header-todo-list">
                         <h4>
                             toDo list by Iron Bit
@@ -24,7 +24,7 @@ export class TodoList extends Component {
             )
         } else {
             return (
-                <div className="d-flex flex-column">
+                <div className="d-flex flex-column col-md-8 offset-md-2">
                     <div className="mb-0 mt-3 py-3 px-3 mx-5 d-flex justify-content-between header-todo-list">
                         <h4>
                             toDo list by Iron Bit
