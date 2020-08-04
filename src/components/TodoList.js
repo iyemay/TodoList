@@ -6,10 +6,10 @@ export class TodoList extends Component {
         if(this.props.todoList.length) {
             return (
                 <div>
-                    <h4>toDo list by Iron Bit</h4>
+                    <h4 className="text-center">toDo list by Iron Bit</h4>
                     {this.props.todoList.map(task => {
                         return (
-                            <TodoListItem task={task}/>
+                            <TodoListItem key={task.id} task={task}/>
                         );
                     })}
                 </div>
