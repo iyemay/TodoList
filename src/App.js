@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { TodoList } from "./components/TodoList";
+import { AddTodo } from "./components/AddTodo";
 
 class App extends React.Component {
 
@@ -27,7 +28,12 @@ class App extends React.Component {
 
     render() {
         return(
-            <TodoList todoList={this.state.todoList}/>
+
+            <div>
+                <AddTodo />
+                <TodoList todoList={this.state.todoList}/>
+            </div>
+
         );
     }
 }
