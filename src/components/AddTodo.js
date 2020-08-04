@@ -5,9 +5,9 @@ export class AddTodo extends Component {
         return (
             <div className="d-flex justify-content-center">
                 <form>
-                    <input type="text"/>
-                    <button>
-                        Agregar
+                    <input className="todo-input mr-2" size="60" type="text"/>
+                    <button className="add-todo-btn">
+                        <strong>Agregar</strong>
                     </button>
                 </form>
             </div>
