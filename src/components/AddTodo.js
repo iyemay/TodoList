@@ -22,14 +22,13 @@ class AddTodo extends Component {
 
     render() {
         return (
-            <div className="d-flex justify-content-center col-md-8 offset-md-2">
-                <form onSubmit={this.handleSubmit}>
-                    <input className="todo-input mr-2" size="68" type="text" value={this.state.content}
-                                    onChange={this.handleChange}/>
-                    <button className="add-todo-btn">
-                        <strong>Agregar</strong>
-                    </button>
-                </form>
+            <div>
+                    <form className="d-flex flex-row" onSubmit={this.handleSubmit}>
+                                <input className="todo-input mr-2 w-75" type="text" value={this.state.content}
+                                       placeholder="Agregar nueva tarea" onChange={this.handleChange}/>
+
+                                <input type="submit" className="add-todo-btn w-25" value="Agregar"/>
+                    </form>
             </div>
         );
     }
