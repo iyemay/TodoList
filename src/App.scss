@@ -3,38 +3,3 @@ body {
     background: radial-gradient(circle at top left, rgba(169,226,53,1) 0%, rgba(77,255,145,1) 58%, rgba(4,229,240,1) 100%);
 }
 
-.header-text {
-    color: white;
-    font-size: 1.5rem;
-}
-
-.todo-input{
-    border: none;
-    background: transparent;
-    border-bottom: 2px solid #eefaf1;
-}
-
-input:focus {
-    outline: none !important;
-    @extend .todo-input;
-}
-
-.add-todo-btn {
-    background-color: #21b2aa;
-    font-size: 0.8rem;
-    border: none;
-    color: white;
-}
-
-.item-todo {
-    background-color: white;
-    width: 100%;
-}
-
-.header-todo-list {
-    background-color: #adff2e;
-}
-
-.break-word {
-    word-wrap: break-word;
-}
