@@ -7,16 +7,12 @@ import { createStore, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import { Provider } from 'react-redux';
 import todosReducer from "./reducer";
-import { addTodoAction } from "./actions";
+
 
 const store = createStore(
     todosReducer,
     applyMiddleware(logger)
 );
-
-store.dispatch(addTodoAction("Tarea 1"));
-/*store.dispatch({ type: REMOVE_TODO});
-store.dispatch({ type: REMOVE_ALL_TODO});*/
 
 ReactDOM.render(
 
