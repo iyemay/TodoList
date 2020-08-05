@@ -6,10 +6,11 @@ export default function todosReducer( state = initialState, action) {
     switch (action.type) {
         case ADD_TODO:
             return  {
-                ...state,
-                todoList: [ {
-                    todoId: action.todoId,
-                    todoText: action.todoText
+                todoList: [
+                    ...state.todoList,
+                    {
+                        todoId: action.todoId,
+                        todoText: action.todoText
                     }
                 ]
             }
