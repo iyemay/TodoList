@@ -1,8 +1,15 @@
 import React, {Component} from "react";
 import TodoListItem from "./TodoListItem";
 import {connect} from "react-redux";
+import {addTodoAction, removeAllTodoAction, removeTodoAction} from "../actions";
 
 class TodoList extends Component {
+
+    removeAllTodo = (event) => {
+        event.preventDefault();
+        this.props.removeAllTodoAction();
+    }
+
     render() {
         if (this.props.todoList.length) {
             return (
@@ -11,7 +18,7 @@ class TodoList extends Component {
                         <h4>
                             toDo list by Iron Bit
                         </h4>
-                        <form>
+                        <form onSubmit={this.removeAllTodo}>
                             <input type="image" alt="remove-all" src="icons/recycle-bin.svg"
                                    width="25" height="25"/>
                         </form>
@@ -52,5 +59,9 @@ function mapStateToProps(state) {
     };
 }
 
-export default connect(mapStateToProps)(TodoList);
+const mapDispatchToProps = {
+    removeAllTodoAction
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
 
