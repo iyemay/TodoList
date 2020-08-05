@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 
 export class AddTodo extends Component {
+
     render() {
         return (
             <div className="d-flex justify-content-center col-md-8 offset-md-2">

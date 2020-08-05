@@ -11,8 +11,8 @@ export class TodoList extends Component {
                             toDo list by Iron Bit
                         </h4>
                         <form>
-                            <input type="image" alt="remove-all" src="icons/recycle-bin.svg" width="25" height="25"
-                            />
+                            <input type="image" alt="remove-all" src="icons/recycle-bin.svg"
+                                   width="25" height="25"/>
                         </form>
                     </div>
                     {this.props.todoList.map(task => {

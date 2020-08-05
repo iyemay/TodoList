@@ -2,12 +2,6 @@ import React, {Component} from "react";
 
 export class TodoListItem extends Component {
 
-    removeTask(e) {
-        e.preventDefault();
-        {
-            console.log("Remove task");
-        }
-    }
 
     render() {
         const task = this.props.task;
@@ -16,8 +10,7 @@ export class TodoListItem extends Component {
                         justify-content-between item-todo" key={task.id}>
                 <h4 className="mb-0">{task.textTodo}</h4>
                 <form>
-                    <input type="image" alt="remove" src="icons/remove.svg" width="25" height="25"
-                           onClick={this.removeTask.bind(this)}/>
+                    <input type="image" alt="remove" src="icons/remove.svg" width="25" height="25"/>
                 </form>
             </div>
         );
