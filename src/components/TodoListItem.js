@@ -1,11 +1,10 @@
-import React, {Component} from "react";
-import {connect} from "react-redux";
-import {removeAllTodoAction, removeTodoAction} from "../actions";
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { removeTodoAction } from "../actions";
 
 class TodoListItem extends Component {
 
     removeTodo = (todoId) => {
-        console.log(todoId);
         this.props.removeTodoAction(todoId);
     }
 
