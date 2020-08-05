@@ -9,7 +9,7 @@ export default class App extends React.Component {
 
     render() {
         return(
-            <div className="d-flex flex-column">
+            <div className="d-flex flex-column mx-auto w-75">
                 <Header />
                 <AddTodo />
                 <TodoList />
