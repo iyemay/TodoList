@@ -19,7 +19,7 @@ export function removeTodoAction(todoId) {
     }
 }
 
-export function removeAllTodo() {
+export function removeAllTodoAction() {
     return {
         type: REMOVE_ALL_TODO
     }
