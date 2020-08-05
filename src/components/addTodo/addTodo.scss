@@ -1,0 +1,23 @@
+.todo-input {
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #eefaf1;
+}
+
+input:focus {
+  outline: none !important;
+  @extend .todo-input;
+}
+
+.add-todo-btn {
+  background-color: #21b2aa;
+  font-size: 0.8rem;
+  border: none;
+  color: white;
+}
+
+@media (min-width: 1200px )  {
+  .add-todo-btn {
+    font-size: 1.2rem;
+  }
+}

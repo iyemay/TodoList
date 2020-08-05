@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { removeTodoAction } from "../actions";
+import { removeTodoAction } from "../../actions";
 
 class TodoListItem extends Component {
 
@@ -11,7 +11,7 @@ class TodoListItem extends Component {
     render() {
         const task = this.props.task;
         return (
-            <div className="d-flex py-3 px-1 justify-content-between item-todo" key={task.todoId}>
+            <div className="d-flex py-3 px-1 justify-content-between align-items-center item-todo" key={task.todoId}>
                 <h4 className="mb-0 break-word d-inline-block w-75">{task.todoText}</h4>
                 <form onSubmit={(event) => this.removeTodo(task.todoId)}>
                     <input type="image" alt="remove" src="icons/remove.svg"

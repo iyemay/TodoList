@@ -1,7 +1,7 @@
-import React, {Component} from "react";
-import TodoListItem from "./TodoListItem";
-import {connect} from "react-redux";
-import {addTodoAction, removeAllTodoAction, removeTodoAction} from "../actions";
+import React, { Component } from "react";
+import TodoListItem from "../todoListItem/TodoListItem";
+import { connect } from "react-redux";
+import { removeAllTodoAction } from "../../actions";
 
 class TodoList extends Component {
 
@@ -34,7 +34,7 @@ class TodoList extends Component {
         } else {
             return (
                 <div className="d-flex flex-column">
-                    <div className="mb-0 mt-3 py-3 d-flex justify-content-between header-todo-list">
+                    <div className="mb-0 mt-3 py-3 px-1 d-flex justify-content-between header-todo-list">
                         <h4>
                             toDo list by Iron Bit
                         </h4>

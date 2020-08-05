@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { addTodoAction } from "../actions.js";
+import { addTodoAction } from "../../actions.js";
 
 class AddTodo extends Component {
 
