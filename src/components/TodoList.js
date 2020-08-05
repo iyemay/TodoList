@@ -1,9 +1,10 @@
 import React, {Component} from "react";
-import {TodoListItem} from "./TodoListItem";
+import TodoListItem from "./TodoListItem";
+import {connect} from "react-redux";
 
-export class TodoList extends Component {
+class TodoList extends Component {
     render() {
-        if(this.props.todoList.length) {
+        if (this.props.todoList.length) {
             return (
                 <div className="d-flex flex-column col-md-8 offset-md-2">
                     <div className="mb-0 mt-3 py-3 px-3 mx-5 d-flex justify-content-between header-todo-list">
@@ -17,7 +18,7 @@ export class TodoList extends Component {
                     </div>
                     {this.props.todoList.map(task => {
                         return (
-                            <TodoListItem key={task.id} task={task}/>
+                            <TodoListItem key={task.todoId} id={task.todoId}/>
                         );
                     })}
                 </div>
@@ -44,4 +45,12 @@ export class TodoList extends Component {
         }
     }
 }
+
+function mapStateToProps(state) {
+    return {
+        todoList: state.todoList
+    };
+}
+
+export default connect(mapStateToProps)(TodoList);
 
