@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.scss';
-import TodoList from "./components/TodoList";
-import  AddTodo  from "./components/AddTodo";
-import { Header } from "./components/Header";
+import TodoList from "./components/todoList/TodoList";
+import  AddTodo  from "./components/addTodo/AddTodo";
+import { Header } from "./components/header/Header";
 
 export default class App extends React.Component {
 
